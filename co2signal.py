@@ -41,7 +41,6 @@ PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend({
 def setup_platform(hass, config, add_devices, discovery_info=None):
     """Set up the CO2signal sensor."""
     import CO2Signal
-    CO2Signal.get_latest_carbon_intensity()
 
     _LOGGER.debug("Setting up the CO2signal platform")
 
