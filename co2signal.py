@@ -14,7 +14,7 @@ from homeassistant.helpers.entity import Entity
 CONF_REFRESH = "refresh_rate"
 CONF_COUNTRY_CODE = "country_code"
 
-REQUIREMENTS = ['co2signal==0.1']
+REQUIREMENTS = ['co2signal==0.2']
 
 _LOGGER = logging.getLogger(__name__)
 
