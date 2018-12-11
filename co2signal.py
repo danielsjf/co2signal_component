@@ -83,8 +83,10 @@ class CO2Sensor(Entity):
         self._longitude = lon
         self._location_type = location_type
         self._unit = 'CO2eq/kWh'
-        self._device_name = country_code
-        self._friendly_name = '{} - {}'.format(self._device_name)
+        self._device_name = "LatLon"
+        if country_code is not None:
+            self._device_name = country_code
+        self._friendly_name = 'CO2 intensity - {}'.format(self._device_name)
         self._refresh_rate = refresh_rate
 
         _LOGGER.debug("Initialise %s", self._friendly_name)
